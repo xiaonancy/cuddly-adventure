@@ -1,0 +1,9 @@
+print('Please input a number.')
+myNumber = input('Number = ')
+if int(myNumber) % 2 == 0:
+    if int(myNumber) % 4 == 0:
+        print('The number ' + myNumber + '  a multiple of 4.')
+    else:
+        print('The number ' + myNumber + ' is even.')
+else:
+    print('The number ' + myNumber + ' is odd.')
