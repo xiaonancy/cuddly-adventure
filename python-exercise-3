@@ -1,0 +1,32 @@
+#No.1 & 2
+
+spam = []
+for i in range(10):
+    print('Please input a number.')
+    spam.append(input('number='))
+print('Thanks! The list you input is: ' + str(spam))
+
+myList = []
+for j in range(10):
+    if int(spam[j]) < 5:
+        myList.append(int(spam[j]))
+    else:
+        continue
+    
+print(myList)
+
+#No.3
+
+print('Please input a number again.')
+biasNumber = int(input())
+newList = []
+for s in range(len(spam)):
+    if int(spam[s]) < biasNumber:
+        newList.append(int(spam[s]))
+    else:
+        continue
+
+print(newList)
+
+
+
