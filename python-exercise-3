@@ -1,5 +1,4 @@
 #No.1 & 2
-
 spam = []
 for i in range(10):
     print('Please input a number.')
@@ -7,9 +6,9 @@ for i in range(10):
 print('Thanks! The list you input is: ' + str(spam))
 
 myList = []
-for j in range(10):
-    if int(spam[j]) < 5:
-        myList.append(int(spam[j]))
+for j in spam:
+    if int(j) < 5:
+        myList.append(int(j))
     else:
         continue
     
@@ -20,9 +19,9 @@ print(myList)
 print('Please input a number again.')
 biasNumber = int(input())
 newList = []
-for s in range(len(spam)):
-    if int(spam[s]) < biasNumber:
-        newList.append(int(spam[s]))
+for s in spam:
+    if int(s) < biasNumber:
+        newList.append(int(s))
     else:
         continue
 
